@@ -1,0 +1,39 @@
+.Project-container{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.project-title{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-title h2{
+    font-size: 2.5rem;
+    margin-top: 8rem;
+}
+
+.project-timeline{
+    color: white;
+    margin-top: 4rem;
+}
+
+.products{
+    display: grid;
+    gap: 1rem;
+}
+
+.products h4, p{
+    color: white;
+}
+
+.products img{
+    width: 100%;
+}
+
+@media (width < 800px){
+    .Project-container{
+        margin-top: 0;
+    }
+}

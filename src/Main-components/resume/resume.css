@@ -1,0 +1,39 @@
+.resume{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.resume-container{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 2rem;
+    
+}
+
+.education{
+    display: grid;
+    gap: 3rem;
+    background-color: rgb(43, 43, 43);
+}
+
+.collage{
+    display: grid;
+    gap: 0.3rem;
+}
+
+.extra{
+    display: grid;
+    gap: 2rem;
+}
+@media (width < 650px){
+    .resume{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .extra{
+        display: grid;
+    }
+}

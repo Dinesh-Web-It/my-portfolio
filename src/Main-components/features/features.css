@@ -1,0 +1,98 @@
+
+
+.container{
+    display: grid;
+    margin-top: 250px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.feature{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-evenly;
+}
+.card{
+    display: block;
+    width: 350px;
+    justify-content: space-evenly;
+    background-color: rgba(129, 126, 126, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.card p{
+    margin-top: 1rem;
+}
+
+.card a{
+    text-decoration: none;
+    color: #0a47ed;
+}
+
+.card a:hover{
+    color: rgb(0, 204, 255);
+}
+@media (width < 1200px){
+    .container{
+        display: grid;
+        margin: 1rem;
+        margin-top: 3rem
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+}
+@media (width < 1100px){
+    .container{
+        display: grid;
+        margin: 1rem;
+        margin-top: 3rem
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+    .card{
+        display: block;
+        width: 250px;
+    }
+}
+
+@media (width < 800px){
+    .container{
+        display: grid;
+        justify-content: space-evenly;
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-evenly;
+        gap: 2rem;
+        margin: 1rem;
+    }
+    .card{
+        display: grid;
+        width: 100%;
+    }
+}
+
+@media (width < 500px){
+    .feature{
+        padding: 0rem;
+    }
+    .card{
+        padding: 1rem;
+
+    }
+}
