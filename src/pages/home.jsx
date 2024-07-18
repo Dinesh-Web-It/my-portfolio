@@ -4,15 +4,10 @@ import FrontContent from "../Main-components/frontContent/frontContent";
 import Footer from "../Main-components/footer/footer";
 import Skills from "../Main-components/Skills/Skills";
 import Projects from "../Main-components/projects/Projects";
-import Resume from "../Main-components/resume/Resume";
 import { FloatingNavDemo } from "../Ui-Components/Demos/FloatingNavDemo";
 import {
-  Link,
-  Button,
   Element,
-  Events,
   animateScroll as scroll,
-  scrollSpy,
 } from "react-scroll";
 import { AnimatedPinDemo } from "../Ui-Components/Demos/AnimatedPinDemo";
 
@@ -24,7 +19,6 @@ const Home = () => {
       <Element name="/home" className="element"><FrontContent /></Element>
       <Element name="/skills" className="element"><Skills /> </Element>
       <Element name="/projects" className="element"><Projects /></Element>
-      
       <Element name="/resume" className="element"><AnimatedPinDemo /></Element>
       <Element name="/contact" className="element"><Footer /></Element>
     </div>
